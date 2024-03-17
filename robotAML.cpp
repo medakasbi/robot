@@ -6,7 +6,7 @@
 // To Install the libraries go to sketch >> Include Library >> Add .ZIP File >> Select the Downloaded ZIP files From the Above links //
 
 
-//#include <AFMotor.h>  
+#include <AFMotor.h>  
 #include <NewPing.h>
 #include <Servo.h> 
 
