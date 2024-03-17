@@ -148,6 +148,17 @@ void moveForward() {
     motor2.setSpeed(speedSet);
     motor3.setSpeed(speedSet);
     motor4.setSpeed(speedSet);
+
+     int n = 4;
+     int tab[n];
+    for(int i=1; i<n+1;i++)
+    {
+        myservo.write(90 + i*90/n); 
+        delay(200);
+        tab[i] = readPing();
+        delay(500);
+    }
+
     delay(5);
    }
   }
