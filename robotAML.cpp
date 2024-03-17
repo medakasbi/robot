@@ -159,6 +159,14 @@ void moveForward() {
         delay(500);
     }
 
+      for(int i=1; i<n+1;i++)
+    {
+        myservo.write(90 - i*90/n); 
+        delay(200);
+        tab[i] = readPing();
+        delay(500);
+    }
+
     delay(5);
    }
   }
